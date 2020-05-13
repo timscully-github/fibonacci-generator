@@ -10,7 +10,7 @@ function fibonacciGenerator(n) {
       output = [0, 1];
     } else {
       output = [0, 1];
-      output.push(output[0] + output[1]);
+      output.push(output[output.length - 2] + output[output.length - 1]);
     }
 
     // return output;
