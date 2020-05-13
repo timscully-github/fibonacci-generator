@@ -10,9 +10,10 @@ function fibonacciGenerator(n) {
       output = [0, 1];
     } else {
       output = [0, 1];
-      output.push(output[output.length - 2] + output[output.length - 1]);
+      for (var i = 2; i < n; i++) {
+          output.push(output[output.length - 2] + output[output.length - 1]);
+      }
     }
-
     // return output;
     console.log(output);
     //Return an array of fibonacci numbers starting from 0.
